@@ -24,14 +24,14 @@ public class fragmentGaleria extends Fragment implements View.OnClickListener {
         imageView = view.findViewById(R.id.imageView);
         for(int i=0;i<6;i++){
             ImageView locaView = new ImageView(view.getContext());
-            locaView.setLayoutParams(new ViewGroup.LayoutParams(100,100));
+            locaView.setLayoutParams(new ViewGroup.LayoutParams(200,200));
             locaView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-            int resID = getResources().getIdentifier("p"+i,"drawable",view.getContext().getPackageName());
+            int resID = getResources().getIdentifier("kuchnia"+i,"drawable",view.getContext().getPackageName());
             locaView.setImageResource(resID);
             locaView.setOnClickListener(this);
             linearLayout.addView(locaView);
         }
-        this.imageView.setImageDrawable(getResources().getDrawable(R.drawable.p0));
+        this.imageView.setImageDrawable(getResources().getDrawable(R.drawable.kuchnia0));
 
         // Inflate the layout for this fragment
         return view;
