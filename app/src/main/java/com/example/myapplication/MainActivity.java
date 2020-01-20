@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         if (savedInstanceState == null){
-                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container, new fragment_informacje()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container, new fragmentGlowna()).commit();
                 navigationView.setCheckedItem(R.id.home);
             }
 
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.orestauracji:
-                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragmentGlowna()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragment_informacje()).commit();
             break;
             case R.id.menu:
                 getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragmentMenu()).commit();
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragmentKontakt()).commit();
                 break;
             case R.id.home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragment_informacje()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragmentGlowna()).commit();
                 break;
         }
         mlayaut.closeDrawer(GravityCompat.START);
