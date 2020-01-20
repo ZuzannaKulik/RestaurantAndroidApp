@@ -70,7 +70,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void onBackPressed(){
         if(mlayaut.isDrawerOpen(GravityCompat.START)){
             mlayaut.closeDrawer(GravityCompat.START);
-        }else{
+        }else if(getSupportFragmentManager().getBackStackEntryCount()!=0){
+            getSupportFragmentManager().popBackStack();
+        }
+        else{
             super.onBackPressed();
         }
     }

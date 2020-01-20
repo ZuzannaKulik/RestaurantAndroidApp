@@ -50,6 +50,9 @@
 
                 <!-- Column 1 -->
                 <androidx.cardview.widget.CardView
+                    android:foreground="@drawable/selector"
+                    android:clickable="true"
+                    android:id="@+id/przystawkiCard"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -90,6 +93,8 @@
 
                 <!-- Column 2 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/zupyCard"
+                    android:foreground="@drawable/selector"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -133,6 +138,8 @@
 
                 <!-- Column 1 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/salatkiCard"
+                    android:foreground="@drawable/selector"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -172,6 +179,8 @@
 
                 <!-- Column 2 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/rybyCard"
+                    android:foreground="@drawable/selector"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -215,6 +224,8 @@
 
                 <!-- Column 1 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/daniaglowneCard"
+                    android:foreground="@drawable/selector"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -255,6 +266,8 @@
 
                 <!-- Column 2 -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/deseryCard"
+                    android:foreground="@drawable/selector"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"

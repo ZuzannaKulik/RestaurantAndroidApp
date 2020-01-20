@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
@@ -65,13 +66,36 @@ public class fragmentMenu extends Fragment {
         for (int i = 0; i < mainGrid.getChildCount(); i++) {
             //You can see , all child item is CardView , so we just cast object to CardView
             CardView cardView = (CardView) mainGrid.getChildAt(i);
-            final int finalI = i;
+            cardView.setOnHoverListener(new View.OnHoverListener(){
+                @Override
+                public boolean onHover(View v, MotionEvent event) {
+                    v.setBackgroundColor(2);
+                    return false;
+                }});
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
-                    ((MainActivity)view.getContext()).getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragment_informacje()).commit();
-
+                    switch (view.getId()) {
+                        case R.id.przystawkiCard:
+                            ((MainActivity) view.getContext()).getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container, new fragmentStartery()).commit();
+                            break;
+                        case R.id.salatkiCard:
+                            ((MainActivity) view.getContext()).getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container, new fragmentSalatki()).commit();
+                            break;
+                        case R.id.zupyCard:
+                            ((MainActivity) view.getContext()).getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container, new fragmentZupy()).commit();
+                            break;
+                        case R.id.rybyCard:
+                            ((MainActivity) view.getContext()).getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container, new fragmentRyby()).commit();
+                            break;
+                        case R.id.daniaglowneCard:
+                            ((MainActivity) view.getContext()).getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container, new fragmentDaniaglowne()).commit();
+                            break;
+                        case R.id.deseryCard:
+                            ((MainActivity) view.getContext()).getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container, new fragmentDesery()).commit();
+                            break;
+                    }
                 }
             });
         }
