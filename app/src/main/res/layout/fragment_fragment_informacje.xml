@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".fragment_informacje">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="informacje" />
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/orestauracji"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="O Restauracji"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textIsSelectable="true"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/orestauracjitext"
+                android:layout_width="308dp"
+                android:layout_height="314dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Powidok - Restauracja Autorska to połączenie wybornego jedzenia i galerii sztuki. Związana z Łodzią, jej klimatem i artystyczną duszą, doskonale wpisuje się w charakter miasta. Powidok to wyjątkowe miejsce, gdzie znajdą Państwo wyśmienite jedzenie oraz zachwycające obrazy. Europejską kuchnię w nowatorskim wydaniu otacza artystyczny klimat i duch naszego miasta, co idealnie odzwierciedla nazwa restauracji. "
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="463dp"
+                android:layout_height="485dp"
+                android:layout_gravity="center"
+                android:src="@drawable/home1" />
+
+            <TextView
+                android:id="@+id/orestauracjitext2"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center_horizontal|top"
+                android:text="Jeśli szukają Państwo stylowego i niepowtarzalnego miejsca, gdzie serwowane dania to prawdziwe dzieła sztuki,  doskonale Państwo trafili. Karta Powidoku to starannie wyselekcjonowane potrawy, które sezonowo urozmaicamy oraz wzbogacamy o akcenty związane z kulturalnym i artystycznym obliczem naszego miasta. Czas spędzony w restauracji z pewnością umili Państwu wystawa znakomitych obrazów."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="648dp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

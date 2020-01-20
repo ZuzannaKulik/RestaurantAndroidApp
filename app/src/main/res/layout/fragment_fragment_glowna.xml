@@ -7,7 +7,8 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
 
         <ViewFlipper
             android:id="@+id/bckgrndViewFlipper1"
@@ -16,8 +17,8 @@
 
             <ImageView
                 android:id="@+id/bckgrndImageView8"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/home1" />
 
@@ -71,5 +72,19 @@
                 android:src="@drawable/home8" />
 
         </ViewFlipper>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bckgrndViewFlipper1"
+            android:layout_alignRight="@+id/bckgrndViewFlipper1"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="TextView Text Above ImageView"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fdfcfc" />
+
     </LinearLayout>
+
 </RelativeLayout>
