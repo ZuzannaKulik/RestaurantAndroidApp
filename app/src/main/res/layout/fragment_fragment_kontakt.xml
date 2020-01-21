@@ -44,7 +44,10 @@
             android:layout_marginTop="12dp"
             android:gravity="center"
             android:textColor="#2196F3"
-            android:text="Łódź 91-415\nPlac Wolności 8"
+            android:text="@string/lokalizacja"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:textColorLink="#2196F3"
             app:layout_constraintEnd_toEndOf="@+id/textView18"
             app:layout_constraintHorizontal_bias="0.489"
             app:layout_constraintStart_toStartOf="@+id/textView18"
@@ -70,12 +73,14 @@
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:textColor="#FFFFFF"
-            android:text="Kontakt Rezerwacja  "
+            android:text="Rezerwacja"
+            android:autoLink="web"
+            android:linksClickable="true"
             app:layout_constraintStart_toStartOf="@+id/textView21"
             app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/textnumbercall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -90,12 +95,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="26dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="@string/strona"
             android:textColor="#2196F3"
-            android:text="restauracja@powidok.lodz.pl"
-            app:layout_constraintEnd_toEndOf="@+id/textView23"
+            android:textColorLink="#2196F3"
+            app:layout_constraintEnd_toEndOf="@+id/textnumbercall"
             app:layout_constraintHorizontal_bias="0.609"
             app:layout_constraintStart_toStartOf="@+id/textView22"
             app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <Button
+            android:id="@+id/callbutton"
+            android:layout_width="77dp"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/textView25"
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

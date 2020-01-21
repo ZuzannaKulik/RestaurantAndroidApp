@@ -5,4 +5,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mail"><a href="mailto:restauracja@powidok.lodz.pl?Subject=Moja%20Rezerwacja" target="_top">restauracja@powidok.lodz.pl</a></string>
+
+    <string name="strona"><a href="https://www.powidok.lodz.pl/">www.powidok.lodz.pl/</a></string>
+    <string name="lokalizacja"><a href="https://www.google.com/maps/place/plac+Wolno%C5%9Bci+7,+91-415+%C5%81%C3%B3d%C5%BA/@51.776816,19.4524522,17z/data=!3m1!4b1!4m5!3m4!1s0x471bcada0d482d73:0xd76f796d423d514c!8m2!3d51.776816!4d19.4546409">Łódź 91-415\nPlac Wolności 8</a></string>
 </resources>
