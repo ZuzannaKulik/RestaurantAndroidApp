@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(MenuItem menuItem) {
         switch (menuItem.getItemId()){
-            case R.id.orestauracji:
-                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragment_informacje()).commit();
+            case R.id.zaloga:
+                getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragment_team()).commit();
             break;
             case R.id.menu:
                 getSupportFragmentManager().beginTransaction().replace(R.id.Fragment_container,new fragmentMenu()).commit();

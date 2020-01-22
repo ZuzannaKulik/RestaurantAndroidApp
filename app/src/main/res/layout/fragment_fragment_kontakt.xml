@@ -42,11 +42,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:gravity="center"
-            android:textColor="#2196F3"
-            android:text="@string/lokalizacja"
             android:autoLink="web"
+            android:gravity="center"
             android:linksClickable="true"
+            android:text="@string/lokalizacja"
+            android:textColor="#2196F3"
             android:textColorLink="#2196F3"
             app:layout_constraintEnd_toEndOf="@+id/textView18"
             app:layout_constraintHorizontal_bias="0.489"
@@ -116,6 +116,15 @@
             android:background="@android:color/transparent"
             app:layout_constraintBottom_toTopOf="@+id/textView25"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/mapbutton"
+            android:layout_width="102dp"
+            android:layout_height="36dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="@+id/textView20"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

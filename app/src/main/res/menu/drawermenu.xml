@@ -8,9 +8,9 @@
         android:icon="@drawable/home"
         android:title="Home" />
     <item
-        android:id="@+id/orestauracji"
+        android:id="@+id/zaloga"
         android:icon="@drawable/about"
-        android:title="O restauracji" />
+        android:title="Nasza załoga" />
     <item
         android:id="@+id/menu"
         android:title="Menu"

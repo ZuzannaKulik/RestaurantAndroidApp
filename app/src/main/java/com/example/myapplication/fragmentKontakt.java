@@ -23,6 +23,7 @@ public class fragmentKontakt extends Fragment {
         View view = inflater.inflate(R.layout.fragment_fragment_kontakt, container, false);
         TextView numbertext = view.findViewById(R.id.textnumbercall);
         Button buttonCall = (Button) view.findViewById(R.id.callbutton);
+        Button buttonMap = (Button) view.findViewById(R.id.mapbutton);
 
         //Performing action on button click
         buttonCall.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +39,19 @@ public class fragmentKontakt extends Fragment {
 //                    startActivity(callIntent);
 //                }
                 startActivity(callIntent);
+
+            }
+            // Inflate the layout for this fragment
+        });
+
+        buttonMap.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Uri gmmIntentUri = Uri.parse("geo:51.777321, 19.454375");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
             }
             // Inflate the layout for this fragment
         });
