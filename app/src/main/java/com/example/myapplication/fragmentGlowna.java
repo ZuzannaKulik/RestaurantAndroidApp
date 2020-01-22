@@ -39,7 +39,7 @@ public class fragmentGlowna extends Fragment {
 
         //sets auto flipping
         viewFlipper.setAutoStart(true);
-        viewFlipper.setFlipInterval(1500);
+        viewFlipper.setFlipInterval(2500);
         viewFlipper.startFlipping();
         // Inflate the layout for this fragment
         return view;

@@ -48,7 +48,13 @@ public class fragmentKontakt extends Fragment {
 
             @Override
             public void onClick(View arg0) {
-                Uri gmmIntentUri = Uri.parse("geo:51.777321, 19.454375");
+                Double myLatitude = 51.777321;
+                Double myLongitude = 19.454375;
+                String labelLocation = "Powidok - Restauracja Autorska";
+                String urlAddress = "http://maps.google.com/maps?q="+ myLatitude  +"," + myLongitude +"("+ labelLocation + ")&iwloc=A&hl=es";
+                //Uri gmmIntentUri = Uri.parse("geo:<" + myLatitude  + ">,<" + myLongitude + ">?q=<" + myLatitude  + ">,<" + myLongitude + ">(" + labelLocation + ")");
+                //Uri gmmIntentUri = Uri.parse(urlAddress);
+                Uri gmmIntentUri = Uri.parse("geo:51.777321,9.454375?q=Powidok+Restauracja+Autorska");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);

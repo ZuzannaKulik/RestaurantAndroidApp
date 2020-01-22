@@ -3,88 +3,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".fragmentGlowna">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="horizontal">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <ViewFlipper
-            android:id="@+id/bckgrndViewFlipper1"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/bckgrndViewFlipper1"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home1" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home2" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home3" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home4" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home5" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home6" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home7" />
+
+                <ImageView
+                    android:id="@+id/bckgrndImageView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/home8" />
+
+            </ViewFlipper>
+
+            <TextView
+                android:id="@+id/orestauracji"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="O Restauracji"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textIsSelectable="true"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/orestauracjitext"
+                android:layout_width="308dp"
+                android:layout_height="314dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Powidok - Restauracja Autorska to połączenie wybornego jedzenia i galerii sztuki. Związana z Łodzią, jej klimatem i artystyczną duszą, doskonale wpisuje się w charakter miasta. Powidok to wyjątkowe miejsce, gdzie znajdą Państwo wyśmienite jedzenie oraz zachwycające obrazy. Europejską kuchnię w nowatorskim wydaniu otacza artystyczny klimat i duch naszego miasta, co idealnie odzwierciedla nazwa restauracji. "
+                android:textColor="#000000"
+                android:textSize="20sp" />
 
             <ImageView
-                android:id="@+id/bckgrndImageView8"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
+                android:id="@+id/imageView6"
+                android:layout_width="463dp"
+                android:layout_height="485dp"
+                android:layout_gravity="center"
                 android:src="@drawable/home1" />
 
-            <ImageView
-                android:id="@+id/bckgrndImageView7"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/home2" />
-
-            <ImageView
-                android:id="@+id/bckgrndImageView6"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/home3" />
-
-            <ImageView
-                android:id="@+id/bckgrndImageView5"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/home4" />
-
-            <ImageView
-                android:id="@+id/bckgrndImageView4"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/home5" />
-
-            <ImageView
-                android:id="@+id/bckgrndImageView3"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/home6" />
-
-            <ImageView
-                android:id="@+id/bckgrndImageView2"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/home7" />
-
-            <ImageView
-                android:id="@+id/bckgrndImageView1"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/home8" />
-
-        </ViewFlipper>
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="52dp"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/bckgrndViewFlipper1"
-            android:layout_alignRight="@+id/bckgrndViewFlipper1"
-            android:layout_centerVertical="true"
-            android:gravity="center"
-            android:text="TextView Text Above ImageView"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#fdfcfc" />
-
-    </LinearLayout>
+            <TextView
+                android:id="@+id/orestauracjitext2"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center_horizontal|top"
+                android:text="Jeśli szukają Państwo stylowego i niepowtarzalnego miejsca, gdzie serwowane dania to prawdziwe dzieła sztuki,  doskonale Państwo trafili. Karta Powidoku to starannie wyselekcjonowane potrawy, które sezonowo urozmaicamy oraz wzbogacamy o akcenty związane z kulturalnym i artystycznym obliczem naszego miasta. Czas spędzony w restauracji z pewnością umili Państwu wystawa znakomitych obrazów."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="648dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
